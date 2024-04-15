@@ -66,24 +66,24 @@ jobs:
               --deployment-target-id  "subscriptions/${{ secrets.DEVCENTER_SUBID }}" `
               --location "westus3" `
               --identity-type "SystemAssigned" `
-              --environment-type-name "Development" `
+              --environment-type-name "Demo" `
               --project-name "newproject-${{ env.BRANCH_NAME }}-dev" `
               --status "Enabled" `
               --resource-group "rg-developer_landing_zone"
 
 
          #This will create an deployed Environments of the project and environment type from above.           
-         #- name: Create devCenter Project Env Typ
-         #  uses: azure/powershell@v1
-         #  with:
-         #    azPSVersion: "3.1.0"
-         #    inlineScript: |
-         #      az devcenter dev environment create `
-         #      --endpoint 'https://54d63bdf-d817-4fa5-a99a-0ec5f32c518c-dc-main-2.westus3.devcenter.azure.com/' `
-         #      --project-name "newproject-${{ env.BRANCH_NAME }}-dev" `
-         #      --catalog-name "MainProjects" `
-         #      --environment-definition-name "Podcast_Web_App" `
-         #      --environment-type "Testing"     
+         - name: Create devCenter Project Env Type
+          uses: azure/powershell@v1
+          with:
+            azPSVersion: "3.1.0"
+            inlineScript: |
+              az devcenter dev environment create `
+              --endpoint 'https://54d63bdf-d817-4fa5-a99a-0ec5f32c518c-dc-main-2.westus3.devcenter.azure.com/' `
+              --project-name "newproject-${{ env.BRANCH_NAME }}-dev" `
+              --catalog-name "MainProjects" `
+              --environment-definition-name "WebApp_Demo_Test" `
+              --environment-type "Testing"     
 
               
               
