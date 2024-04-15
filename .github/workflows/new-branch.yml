@@ -74,8 +74,8 @@ jobs:
 
          #This will create an deployed Environments of the project and environment type from above.           
          - name: Create devCenter Project Env Type
-          uses: azure/powershell@v1
-          with:
+           uses: azure/powershell@v1
+           with:
             azPSVersion: "3.1.0"
             inlineScript: |
               az devcenter dev environment create `
