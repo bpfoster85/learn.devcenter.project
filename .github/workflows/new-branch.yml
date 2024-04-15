@@ -5,7 +5,7 @@ jobs:
    Run_IAC_for_new_branch:
       name: 'Running IAC for new Branch'
       runs-on: ubuntu-latest
-      if: ${{contains(github.ref, 'refs/heads/releases/')}}
+      # if: ${{contains(github.ref, 'refs/heads/releases/')}}
       steps:
          - name: Setting Branch Name to Variable
            run: |
