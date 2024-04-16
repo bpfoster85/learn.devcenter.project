@@ -1,0 +1,5 @@
+version: v0.1
+testName: SampleAppTest
+testPlan: test_script.jmx
+description: 'Running the test script'
+engineInstances: 1
