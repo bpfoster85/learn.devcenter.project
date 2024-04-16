@@ -14,12 +14,14 @@ namespace fn_http_helloworld
             _logger = logger;
         }
 
-        [Function("Function1")]
+        [Function("NotifyBeneficiary")]
         public IActionResult Run([HttpTrigger(AuthorizationLevel.Function, "get", "post")] HttpRequest req)
         {
             
             _logger.LogInformation("C# HTTP trigger function processed a request.");
             return new OkObjectResult("Welcome to Azure Functions!");
         }
+
+        public class Beneficiary
     }
 }
