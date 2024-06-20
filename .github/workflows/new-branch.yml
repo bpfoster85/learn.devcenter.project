@@ -79,7 +79,7 @@ jobs:
             azPSVersion: "3.1.0"
             inlineScript: |
               az devcenter dev environment create `
-              --endpoint 'https://54d63bdf-d817-4fa5-a99a-0ec5f32c518c-dc-main-2.westus3.devcenter.azure.com/' `
+              --endpoint 'https://54d63bdf-d817-4fa5-a99a-0ec5f32c518c-devcenter-test.eastus2.devcenter.azure.com/' `
               --project-name "newproject-${{ env.BRANCH_NAME }}-dev" `
               --catalog-name "Demo_Service_Clean" `
               --environment-definition-name "WebApp_Demo_Test" `
