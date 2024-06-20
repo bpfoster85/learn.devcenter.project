@@ -79,12 +79,13 @@ jobs:
             azPSVersion: "3.1.0"
             inlineScript: |
               az devcenter dev environment create `
+              --dev-center-name 'devcenter-test' `
               --endpoint 'https://54d63bdf-d817-4fa5-a99a-0ec5f32c518c-devcenter-test.eastus2.devcenter.azure.com/' `
-              --project-name "newproject-${{ env.BRANCH_NAME }}-dev" `
-              --catalog-name "Demo_Service_Clean" `
-              --environment-definition-name "WebApp_Demo_Test" `
-              --environment-name "WebApp_Demo_Test" `
-              --environment-type "Demo"     
+              --project-name 'newproject-${{ env.BRANCH_NAME }}-dev' `
+              --catalog-name 'Demo_Service_Clean' `
+              --environment-definition-name 'WebApp_Demo_Test' `
+              --environment-name 'WebApp_Demo_Test' `
+              --environment-type 'Demo'     
 
               
               
