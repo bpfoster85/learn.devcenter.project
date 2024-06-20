@@ -83,6 +83,7 @@ jobs:
               --project-name "newproject-${{ env.BRANCH_NAME }}-dev" `
               --catalog-name "Demo_Service_Clean" `
               --environment-definition-name "WebApp_Demo_Test" `
+              --environment-name "WebApp_Demo_Test" `
               --environment-type "Demo"     
 
               
