@@ -80,10 +80,10 @@ jobs:
             inlineScript: |
               az devcenter dev environment create `
               --dev-center-name 'devcenter-test' `
-              --project-name 'newproject-${{ env.BRANCH_NAME }}-dev' `
+              --project-name 'WebApp_Demo_Test' `
               --catalog-name 'Demo_Service_Clean' `
               --environment-definition-name 'WebApp_Demo_Test' `
-              --environment-name 'WebApp_Demo_Test' `
+              --environment-name 'newproject-${{ env.BRANCH_NAME }}-dev' `
               --environment-type 'Demo'     
 
               
